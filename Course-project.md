@@ -193,3 +193,6 @@ confusionMatrix(p1,training$classe)
 ```
 
 As we can see, this model makes an excellent fitting of our training data. And we don't have to make extra cross validation since the "randomForest" function does it internally as it performs the classification of the data.
+
+Now, we can estimate our out-of-sample error. Since the model fits perfectly the training dataset, this could be caused due an overfitting in the model. So, the out-of-sample error could be large. However, since we are using the variables which explain most of the variability of the dataset, the model could perform well predicting values out of the training set, and causing an low out-of-sample error.
+
